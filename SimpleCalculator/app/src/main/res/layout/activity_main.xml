@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:padding="16dp"
+        android:text="@string/textViewTitle"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/addition_symbol"
+        android:textColor="#CCCACA"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/spinnerAdd1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerAdd2"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewAdd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewAddResult"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/default_result"
+        android:textColor="#CCCACA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toEndOf="@+id/spinnerAdd2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerDiv1"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/division_symbol"
+        android:textColor="#CCCACA"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDiv1" />
+
+    <Spinner
+        android:id="@+id/spinnerDiv2"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toEndOf="@+id/textViewDiv" />
+
+    <TextView
+        android:id="@+id/textViewDivResult"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/default_result"
+        android:textColor="#CCCACA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDiv2" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="#6200EE"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

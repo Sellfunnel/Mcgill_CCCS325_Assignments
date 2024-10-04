@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Information App</string>
+    <string name="image_desc">Golden State Warriors</string>
+    <string name="settings">Settings</string>
+    <string name="title_text">Information</string>
+    <string name="header_text">How Golden State went from NBA champions in 2022 to Play-In Tournament loss in 2024</string>
+    <string name="detailed_info">Two seasons after standing at the mountaintop as NBA champions, Golden State failed to qualify for the 2024 NBA Playoffs after being eliminated from the Play-In Tournament. This marks just the third time in Steve Kerr\'s 10 seasons at the helm that the Warriors will not reach the playoffs.</string>
+</resources>

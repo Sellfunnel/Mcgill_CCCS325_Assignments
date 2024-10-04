@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- BMI Category Table -->
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Table Header -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:gravity="center"
+                android:text="CATEGORY"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:gravity="center"
+                android:text="BMI RANGE kg/m²"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- BMI Category - Underweight -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="Underweight"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="&lt;18.5"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <!-- BMI Category - Normal Weight -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="Normal Weight"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="18.5 - 24.9"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <!-- BMI Category - Overweight -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="Overweight"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="25 - 29.9"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <!-- BMI Category - Obese -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="Obese"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6D9D9"
+                android:gravity="center"
+                android:text="&gt;30"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="140dp"
+        android:hint="Weight (in kilograms)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="180dp"
+        android:layout_height="6dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/heightInput"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <!-- Height Input -->
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="160dp"
+        android:hint="Height² (in meters)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/hint_color"
+        app:layout_constraintBottom_toTopOf="@+id/calculateBmiButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Equal Sign '=' -->
+
+    <TextView
+        android:id="@+id/equalSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="="
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heightInput"
+        app:layout_constraintEnd_toStartOf="@+id/bmiResult"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="@+id/bmiResult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- BMI Result Display -->
+
+    <TextView
+        android:id="@+id/bmiResult"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="208dp"
+        android:text="Your BMI"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/calculateBmiButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/calculateBmiButton"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:background="#6200EE"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="98dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" /> <!-- This is the default settings icon -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

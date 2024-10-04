@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="addition_symbol">+</string>
+    <string name="division_symbol">/</string>
+    <string name="default_result">= 0</string>
+    <string name="textViewTitle">Assignment 1</string>
+
+    <string-array name="numbers_add1">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="numbers_add2">
+        <item>15</item>
+        <item>25</item>
+        <item>35</item>
+        <item>45</item>
+        <item>55</item>
+    </string-array>
+
+    <string-array name="numbers_div1">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="numbers_div2">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+</resources>

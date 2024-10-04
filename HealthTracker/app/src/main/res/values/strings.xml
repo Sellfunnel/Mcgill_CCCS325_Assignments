@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Health Tracker</string>
+    <string-array name="background_options">
+        <item>Default</item>
+        <item>Warm</item>
+        <item>Cold</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="api_key">04f29244b596ce4ea8f72f9ef10a3158</string>
+    <string name="weather_icon_desc">Description of the weather icon</string>
+    <string name="news_api_key">66f5a17895404715b7d04a6466089b9b</string>
+</resources>
